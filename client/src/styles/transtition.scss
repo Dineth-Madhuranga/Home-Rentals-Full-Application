@@ -1,0 +1,25 @@
+body {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.page-transition-enter {
+    opacity: 0;
+    transform: translateY(-10%);
+}
+
+.page-transition-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.page-transition-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.page-transition-exit-active {
+    opacity: 0;
+    transform: translateY(10%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
